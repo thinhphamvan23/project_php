@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 800px;
+    height: 100%;
+}
+
+.title{
+    height: 50px; 
+    line-height: 50px;
+    margin: 10px 0 20px 0;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: #A9A9A9;
+}
+
+.Header{
+    height: 35px;
+    background-color: #000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.Header ul{
+    list-style: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+}
+
+.Header ul li a{
+    text-decoration: none;
+    line-height: 35px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.Home{
+    display: flex;
+}
+
+.Infomation{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.Infomation .Slideshow{
+    width: 97%;
+     border-radius: 5px;
+}
+
+.Infomation .Item{
+    width: 30%;
+    height: 280px;
+    border: solid #000 1px;
+    margin: 10px 0;
+    border-radius:5px ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.Infomation .Item img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.Infomation .Item a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+   text-align: center;
+}
+
+.Infomation .Item form input{
+    margin-left: 30px;
+    height: 26px;
+    background-color: #fff;
+    outline: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.Infomation .Item form input:hover{
+        background-color: #A9A9A9;
+}
+
+.Control{
+    width: 200px;
+}
+
+.Control .form{
+    width: 100%;
+    border: solid #000 1px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.Control .form h3,.Infoname h3{
+    width: 100%;
+    height: 30px;
+    background-color: #DCDCDC;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 15px;
+}
+
+.Control .form .login{
+    padding: 15px;
+    font-size: 13px;
+}
+
+
+.login input{
+    margin: 5px 0;
+}
+.login .check{
+    display: flex;
+    align-items: center;
+}
+.login button{
+    width: 80px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: solid #000 1px;
+}
+
+.login ul{
+    margin-left: 15px;
+}
+
+.category ul li{
+    list-style: none;
+    border-bottom: solid #000 1px;
+    font-size: 13px;  
+}
+.table_comment{
+    display: flex;
+    align-items: center;
+}
+
+.table_comment p{
+    margin: 0 60px;
+}
+
+.category table{
+    width: 100%;
+    margin-left: 50px;
+}
+
+.category table table td:nth-child(1){
+    width: 50%;
+}
+
+.category table table td:nth-child(2){
+    width: 30%;
+}
+
+.category table table td:nth-child(3){
+    width: 20%;
+}
+
+.category ul li a{
+    text-decoration: none;
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.category ul li:hover{
+    background-color: #A9A9A9;
+}
+
+.search{
+    width: 100%;
+    height: 30px;
+    background-color: #DCDCDC;
+}
+
+.search h3 a{
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search form input{
+    margin: 3px;
+    width: 130px;
+}
+
+#sb{
+    width: 50px;
+}
+
+.form .like{
+    margin: 10px;
+    display: flex;
+    font-size: 13px;
+}
+
+.form .like img{
+    width: 35px;
+    height: 35px;
+    border: solid #000 1px;
+}
+
+.form .like a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #A9A9A9;
+    border-radius: 5px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .product_detail{
+    max-width: 100vh;
+    width: 600px;
+    margin-right: 10px;
+    overflow: hidden;
+    border: solid #000 1px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  .comment{
+    max-width: 100vh;
+    width: 600px;
+    margin-right: 10px;
+    border-top: solid #000 1px;
+  }
+
+.product_detail .name,.comment .name{
+    width: 100%;
+    height: 30px;
+    background-color: #DCDCDC;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.product_detail img{
+    width: 300px;
+    height: 300px;
+}
+
+.product_detail p{
+    margin-left: 30px;
+}
+
+.spcungloai{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.spcungloai a{
+    text-decoration: none;
+    color: #000;
+    margin: 3px;
+}
+
+.loadsp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.bill{
+    width: 95%;
+    border: solid 1px #000;
+    margin: 20px;
+}
+
+.bill .namebill{
+    width: 100%;
+    height: 50px;
+    background-color: #A9A9A9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bill .namebill p{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+
+.infobill,.sumbill{
+    width: 100%;
+    display: flex;
+}
+
+.infobill p{
+   width: 17%;
+    height: 80px;
+    border: solid  #000 1px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infobill img{
+    width: 70px;
+    height: 70px;
+}
+
+
+.sumbill{
+    height: 40px;
+    align-items: center;
+}
+
+#tt{
+    margin-left: 240px;
+}
+
+.Infoname{
+    width: 97%;
+    height: 200px;
+    overflow: hidden;
+    border: solid #000 1px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.Infoname .Infoname_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Infoname_item input{
+    width: 250px;
+    margin:10px 40px 0 0;
+    outline: none;
+}
+
+.Infoname_item p{
+    margin: 5px 50px;
+
+}
+
+.Infoname h3{
+    margin-bottom: 20px;
+}
+
+#tructuyen{
+    margin:10px 0 0 50px;
+}
+
+
+.Infoname_item h2{
+    margin: 50px 100px;
+}

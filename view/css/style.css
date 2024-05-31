@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.title{
+    width: 800px;
+    height: 80px;
+    padding: 20px;  
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #D3D3D3;
+    color: #000;
+}
+
+.header{
+    width: 800px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.look{
+    width: 800px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #D3D3D3;
+    font-size: 15px;
+}
+
+h3{
+    line-height: 35px;
+    padding-left: 20px;
+}
+
+.maloai input,.tenloai input{
+    width: 800px;
+    height: 25px;
+    outline: none;
+}
+
+.themmoi,.danhsach,.nhaplai{
+    width:80px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.themmoi:hover,.danhsach:hover,.nhaplai:hover{
+    background-color: #3b3b3b;
+}
+
+
+.nametable{
+    width: 800px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #A9A9A9;
+    font-weight: 600;
+    margin-top:10px;
+}
+
+
+.nametable p{
+    width: 15%;
+    margin-left: 30px;
+}
+
+#tenloai{
+    margin-right: 200px;
+}
+#maloai{
+    margin-left: 200px;
+}
+
+table{
+     border-collapse: collapse;
+     width: 800px;
+}
+
+
+.infotable td{
+    border: solid #000 1px;
+    height: 40px;
+    width: 15%;
+    word-wrap: break-word;
+}
+
+
+.check input{
+    margin-left: 10px;
+}
+
+.id,.name{
+    font-size: 15px;
+    text-align: center;
+}
+
+.hinh{
+    max-width: 100px;
+    text-align: center;
+    
+}
+
+
+button{
+    height: 25px;
+    margin: 10px 0;
+}
+
+.control input{
+    width: 40px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+img{
+   width: 80px;
+}
+
+#update{
+    margin-left: 80px;
+}
